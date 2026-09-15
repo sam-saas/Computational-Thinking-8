@@ -27,4 +27,6 @@ print("\n\n")
                                                                                           
                                   
 print("Now it's your turn:")
-print("Find this line (line 30) in the welcome_to_ct8.py file, then change the message to say a fact about you.")                                  
+print("I was once stuck on the Great Wall of China for four hours because it rained heavily for three.") 
+print("When i was like 6 a dog bit my left hand and I have the scars to prove it. also that's how i learned the rabies vaccine is bright purple")
+print("I can't crack my back because it rotates too far, but because of that I can crawl at people and freak them out.")
