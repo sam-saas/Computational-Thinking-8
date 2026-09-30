@@ -36,7 +36,7 @@ elif thing1 == "B" or thing1 == "b":
      input()
      print("Walking further, you find a stream. You remember the old survival tip that flowing water is safer, and that you can follow rivers and streams when lost.")
      thing6 = input("Do you A. drink the water or B. follow it to safety?")
-     if thing6 == "a" or "A":
+     if thing6 == "a" or thing6 == "A":
         print("You bend down to sip the water. It's cold and has a mineral-y taste to it, but you're too thirsty to care.")
         input()
         if  TC == "no":
@@ -55,7 +55,7 @@ elif thing1 == "B" or thing1 == "b":
         print("")
         print("cause of death:")
         print("SICKNESS FROM DRINKING CONTAMINATED WATER")
-     if thing6 == "b" or "B":
+     if thing6 == "b" or thing6 == "B":
         print("You follow the stream for a while, walking along its edge.")
         input()
         print("All of a sudden, your foot catches on a pebble.")
@@ -79,27 +79,27 @@ elif thing1 == "B" or thing1 == "b":
         print("")
         print("Cause of death:")
         print("GRIZZLY BEAR")
-    print("The plane has stopped smoking, but it seems like everything inside has burnt to ash.")
-    if thing2 == "a" or "A":
-       thing3 = input("Would you like to A. check the map or B. use it to start a fire. ")
-       if thing3 == "A" or "a":
+print("The plane has stopped smoking, but it seems like everything inside has burnt to ash.")
+if thing2 == "a" or thing2 == "A":
+    thing3 = input("Would you like to A. check the map or B. use it to start a fire. ")
+    if thing3 == "A" or thing3 == "a":
         print("You find where you are from the shapes of the mountains nearby, and spot a town that looks to be only a small trek ")
         thing4 = input("Do you A. Wait for rescue, or B. Try to find, then hike to the town.")
         print()
         if thing4 == "A" or thing4 == "a":
-             print("You wait for rescue in the cold, keeping your eyes on the sky. ")
-             input()
-             print("As dawn comes, the stars dim, as does your hopes.")
-             input()
-             print("You keep waiting throughout the day, barely moving. When nighttime comes, the temperature has dropped so low that you feel like your blood has frozen.")
-             input()
-             print("You didn't make it through the cold winter night.")
-             input()
-             print("FIN.")
-             print("")
-             print("Cause of death:")
-             print("HYPOTHERMIA")
-        else:
+            print("You wait for rescue in the cold, keeping your eyes on the sky. ")
+            input()
+            print("As dawn comes, the stars dim, as do your hopes.")
+            input()
+            print("You keep waiting throughout the day, barely moving. When nighttime comes, the temperature has dropped so low that you feel like your blood has frozen.")
+            input()
+            print("You didn't make it through the cold winter night.")
+            input()
+            print("FIN.")
+            print("")
+            print("Cause of death:")
+            print("HYPOTHERMIA")
+        elif thing4 == "B" or thing4 == "b":
             print 
             print("You gather all your belongings and begin hiking towards the town, map in hand.")
             input()
@@ -107,50 +107,46 @@ elif thing1 == "B" or thing1 == "b":
             print("")
             print("The top of the map has been torn off, you're now traveling based on instinct alone.")
             thing5 = input("You come across a branching path. Do you A. go on the left side of the path or B. the right side?")
-            if thing5 == "A" or "a":
-               print("You turn left and keep walking.")
-               print("After what seems like an eternity, you hear the sounds of civilization!")
-               print("")
-               print("You immediately talk to the first person you find, explaining your situation.")
-               input()
-               if TC == "yes":
-                  print("Apparently, there's already a protocol for this. A helicopter will arrive to take you tomorrow, and the stranger has offered to let you and TC stay in their guest bedroom for the night.")
-                  input()
-                  print("You fill your growling stomachs with warm food, and you and TC get all your mild injuries patched up.")
-                  input()
-                  print("TC falls asleep first, while you lie in bed, eagerly awaiting tomorrow's events.")
-                  input()
-                  print("FIN.")
-                  
-               else:
-                  print("Apparently, there's already a protocol for this. A helicopter will arrive to take you tomorrow, and the stranger has offered to let you stay in their guest bedroom for the night.")
-                  input()
-                  print("You fill your growling stomach with warm food, and you get all your mild injuries patched up.")
-                  input()
-                  print("You finally fall asleep, awaiting tomorrow's events.")
-                  input()
-                  print("FIN.")
-       if thing4 == "b" or "B":
-          print("The warmth brings you some comfort, but you begin to shiver again when you realize you burnt your only hope for survival.")
-          input()
-          print("FIN.")
-          print("Cause of death:")
-          print("UNKNOWN. anything could happen in the forest.")
-    if thing2 == "C" or "c":
-       input()
-       print("you ration your water, but you still run out in a few days. You search for anything flammable, but it's all damp from a recent rain.")
-       input()
-       print("you're wandering the area, searching for mushrooms for food, when you spot a beehive.")
-       input()
-       print("out of desperation, you try to grab a piece of honeycomb.")
-       input()
-       print("you got stung by so many bees that you died.")
-       input()
-       print("FIN.")
-       print("Cause of death:")
-       print("ANAPHYLAXIS FROM REACTION TO BEE VENOM")
-       
-
+            if thing5 == "A" or thing5 == "a":
+                print("You turn left and keep walking.")
+                print("After what seems like an eternity, you hear the sounds of civilization!")
+                print("")
+                print("You immediately talk to the first person you find, explaining your situation.")
+                input()
+                if TC == "yes":
+                    print("Apparently, there's already a protocol for this. A helicopter will arrive to take you tomorrow, and the stranger has offered to let you and TC stay in their guest bedroom for the night.")
+                    input()
+                    print("You fill your growling stomachs with warm food, and you and TC get all your mild injuries patched up.")
+                    input()
+                    print("TC falls asleep first, while you lie in bed, eagerly awaiting tomorrow's events.")
+                    input()
+                    print("FIN.")       
+                else:
+                    print("Apparently, there's already a protocol for this. A helicopter will arrive to take you tomorrow, and the stranger has offered to let you stay in their guest bedroom for the night.")
+                    input()
+                    print("You fill your growling stomach with warm food, and you get all your mild injuries patched up.")
+                    input()
+                    print("You finally fall asleep, awaiting tomorrow's events.")
+                    input()
+                    print("FIN.")
+    if thing3 == "b" or thing3 == "B":
+      print("The warmth brings you some comfort, but you begin to shiver again when you realize you burnt your only hope for survival.")
+      input()
+      print("FIN.")
+      print("Cause of death:")
+      print("UNKNOWN. anything could happen in the forest.")
+      input()
+      print("you ration your water, but you still run out in a few days. You search for anything flammable, but it's all damp from a recent rain.")
+      input()
+      print("you're wandering the area, searching for mushrooms for food, when you spot a beehive.")
+      input()
+      print("out of desperation, you try to grab a piece of honeycomb.")
+      input()
+      print("you got stung by so many bees that you died.")
+      input()
+      print("FIN.")
+      print("Cause of death:")
+      print("ANAPHYLAXIS FROM REACTION TO BEE VENOM")
 else:
     print("uh-oh! you didn't respond correctly in time and you didn't make it out the plane.")
     health = "0"
