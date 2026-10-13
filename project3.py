@@ -23,7 +23,7 @@ elif q2 == "B" or q2 == "b":
     print("\nCorrect!")
     right += 1
 QA += 1
-q3 = input("\nWhat am I excited for next tri? \nA: Going to Italy \nB: My stepsister's birthday \nC: Being in the musical\n")
+q3 = input("\nWhat am I excited for next tri? \nA: Going to Italy \nB: My stepsister's wedding \nC: Being in the musical\n")
 if q3 == "A" or q3 == "a" or q3 == "B" or q3 == "b":
     print("\nWRONG!")
     wrong += 1
@@ -57,6 +57,7 @@ else:
             wrong +=1
         elif q5 == "C" or q5 == "c":
             print("\nCorrect!")
+            right += 1
         if wrong == 3 and QA == 5:
             print("\nYou got 3 wrong! you FAIL!")
             print("So close...")
