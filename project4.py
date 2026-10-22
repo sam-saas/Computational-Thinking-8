@@ -19,16 +19,25 @@ for i in range (17):
         print(f"You healed {healamount} health")
     elif choice == "B" or choice == "b" or choice == "Attack" or choice == "attack":
         print("")
-        monsterdamage = random.choice([0,1,2,3,4,7,8,9,10,11,12,13,20])
-        monsterhealth -= monsterdamage
         time.sleep(1)
+        bethisdabest = random.randint([1,50])
+        if bethisdabest == 50:
+            monsterdamage = 100
+            print("BethIsDaBest!!!")
+        else:
+            monsterdamage = random.choice([0,1,2,3,4,7,8,9,10,11,12,13,20])
+        monsterhealth -= monsterdamage
         print(f" The monster took {monsterdamage} damage!")
         if monsterhealth <= 0:
             print("Huzzah! You successfully vanquished the ogre! The village is safe!")
             exit()
     attacktype = random.randint(1,3)
     time.sleep(1)
-    if attacktype == 1:
+    pregnancy2appliances1 = random.randint([1,50])
+    if pregnancy2appliances1 == 50:
+        playerdamage = 100
+        print("PREGANCY, PREGNANCY, APPLIANCES!!")
+    elif attacktype == 1:
         print("\nThe ogre swings its club at you!")
         playerdamage = random.choice([0,1,12,15])
         time.sleep(1)
